@@ -1,0 +1,137 @@
+/* COLORS*/
+:root {
+    --color-1: #0E153A;
+    --color-2: #22D1EE;
+    --color-3: #E2F3f5;
+    --color-4: #3D5af1;
+}
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+img {
+    height: 100%;
+}
+
+.navbar {
+    height: 55px;
+    background-color:var(--color-4);
+}
+
+
+.navbar>.navbar_container {
+    width: 900px;
+    margin: 0 auto;
+}
+.logo_area {
+    display: inline-block;
+    width: 125px;
+    height:40px;
+    margin-top: 7px;
+}
+
+.logo_area>img {
+    height: 100%;
+    float: left;
+}
+
+.navbar-center-image {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar-center-image>img {
+    height: 80px;
+    border-radius: 50%;
+}
+
+.navbar>.navbar_container>.menu_navbar>span {
+    display: inline-block;
+    margin-top: 18px;
+}
+ 
+.navbar>.navbar_container>.menu_navbar{
+    float:right;
+}
+.navbar>.navbar_container>.logo_area>span,
+.navbar>.navbar_container>.menu_navbar>span  {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .navbar>.navbar_container>.logo_area>span {
+    display: inline-block;
+    margin-top: 11px;
+    margin-left: 10px;
+  }
+
+  .navbar>.menu_navbar>ul>li:nth-child(2) {
+      float: right;
+  }
+  
+.container {
+    width: 900px;
+    margin: 20px auto 0;
+    display: table;
+    box-sizing: border-box;
+    
+}
+
+.row {
+   margin: 30px 0;
+   height: 50px;
+}
+
+.column {
+    background-color:var(--color-3);
+    display: table-cell;
+    border: 1px solid var(--color-1);
+
+}
+
+.row.row-1 {
+    background-color:var(--color-3);
+    margin-top: 40px;
+    border: 1px solid var(--color-1);
+}
+.row.row-2>.column:nth-child(1) {
+    float: left;
+    width: calc(50% - 20px);
+}
+
+.row.row-2>.column:nth-child(2) {
+    float: right;
+    width: calc(50% - 20px);
+}
+
+.row.row-3>.column:nth-child(1) {
+    float: left;
+    width: calc(33.3333% - 15px);
+}
+.row.row-3>.column:nth-child(2) {
+    float: left;
+    margin-left: 30px;
+    width: calc(33.3333% - 15px);
+    
+}
+.row.row-3>.column:nth-child(3) {
+    float: right;
+    width: calc(33.3333% - 30px);
+}
+
+.row-4 {
+    background-color:var(--color-3);
+    height: 200px;
+    margin: 20px 0;
+    border: 1px solid var(--color-1);
+    overflow-y:scroll;
+}
+
+
