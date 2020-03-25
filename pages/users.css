@@ -1,21 +1,14 @@
-:root {
---color-1: #0e153a;
---color-2: #22d1ee;
---color-3: #e2f3f5;
---color-4: #3d5af1; 
-}
-
 .container {
     height: 500px;
-    width: 66%;
+    width: 900px;
     background-color: var(--color-3);
     border-radius: 15px;
     border: 1px solid var(--color-1);
-    padding:100px 20px 30px;
-
+    padding: 100px 20px 30px;
+ 
 }
 
-table, td, th {
+td, th {
     border: 1px solid black;
     height: 75px;
     background-color: white;
@@ -25,58 +18,40 @@ table {
   border-collapse: collapse;
   width: 100%;
   height: 80%;
-  margin-left:auto;
-  margin-right:auto;
-}
-  
-table thead tr th:nth-child(3)  {
-  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-table tr th:nth-child(3) > span {
-    display: inline-block;
-    margin-left: 10px;
-}
-table tbody tr td:nth-child(3)  {
+table tbody tr td:nth-child(3),
+table thead tr th:nth-child(3),
+table thead tr th:nth-child(3) > span,
+table tbody tr td:nth-child(3) > span  {
   text-align: left;
-  font-size: 20px;
-}
-
-table tbody tr td:nth-child(3) > span {
-  display: inline-block;
   margin-left: 10px;
+  
 }
-
-table tbody tr td {
-  text-align: center;
+table tbody tr td:nth-child(1),
+table tbody tr td:nth-child(2),
+table tbody tr td:nth-child(3),
+table tbody tr td  {
   font-size: 20px;
 }
 
-table tbody tr td:nth-child(4) > span {
-  text-align: center;
-  font-size: 14px;
-}
-
+.container > .text,
+table tbody tr td,
+table tbody tr td:nth-child(4) > span,
 table tbody tr td:nth-child(5) > span {
   text-align: center;
   font-size: 14px;
 }
+
 .container > .text {
-    text-align: center;
     margin-top: -83px;
     margin-bottom: 24px;
+    font-size: 20px;
 }
 
 .container > .text > span {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
-}
-.menu_navbar a {
-  color: #fff;
-  display:  inline-block;
-  padding: 7px;
-  background-color: var(--color-1);
-  border-radius:4px;
-  font-family: 'Open Sans', sans-serif;
-  margin-right: 5px;
 }
