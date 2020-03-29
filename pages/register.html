@@ -8,6 +8,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="/styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/helpers.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/navbar.css" />
     <link rel="stylesheet" type="text/css" href="/pages/register.css" />
     <title>Heart</title>
   </head>
@@ -35,27 +37,27 @@
     <!-- Container -->
     <form class="container">
         <div class="container-left">
-                <div class="text">
+                <div class="register">
                     Register
                 </div>
                 <div class="name">
                     <label for="name">Name:</label>
-                    <input id="name" type="name" name="name" placeholder="John Doe" />
+                    <input id="name" type="name" name="name" placeholder="John Doe" class="input-border" />
                 </div>
                 <div class="email">
                     <label for="email">E-mail:</label>
-                    <input type="email" name="email" placeholder="error@mail.com" />
+                    <input type="email" name="email" placeholder="error@mail.com" class="input-border"/>
                 </div>
                 
                 <div class="password">
                     <label for="lname">Password:</label>
-                    <input type="password"  name="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"/>
+                    <input type="password"  name="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" class="input-border"/>
                 </div>
         </div>
 
         <div class="container-right">
             <div class="country">
-                <select name="country">
+                <select name="country" class="input-border">
                   <option>Country</option> 
                   <option>Romania</option>
                   <option>Ungaria</option>
