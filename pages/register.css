@@ -1,0 +1,109 @@
+.container {
+    height: 500px;
+    width: 900px;
+    background-color: var(--color-3);
+    border-radius: 15px;
+    border: 1px solid var(--color-1);
+    padding: 30px 20px 30px;
+}
+.some-text {
+    height: 50px;
+    width: 200px;
+    background-color: var(--color-3);
+    border: 1px solid var(--color-1);
+    padding: 30px 20px 30px;
+}
+
+.container-left,
+.container-right {
+    width: 50%;
+}
+.container-left {
+    display: inline-block;
+    width:calc(50% - 35px);
+    margin-left: 30px;
+}
+.container-right {
+    float: right;
+}
+.container-left > .name > input,
+.container-left > .email > input,
+.container-left > .password > input {
+    margin-top: 10px;
+    padding: 10px 100px 10px 10px;
+   
+
+}
+.container-left > .name > input,
+.container-left > .email > input,
+.container-left > .password > input,
+.container-right > .country > select {
+    border-radius: 7px;
+    border: 1px solid var(--color-2);
+}
+
+.container-left > .name,
+.container-left > .email,
+.container-left > .password {
+    margin-top: 50px;
+}
+.container-left > .text {
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: larger;
+}
+.container-left > .name > label,
+.container-left > .email > label,
+.container-left > .password >label {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+.container-right > button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--color-4);
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 238px;
+    font-weight: 700;
+}
+
+.container-right > .country {
+    padding-top: 128px;
+    
+}
+
+.container-right > textarea {
+    margin: 0px; 
+    width: 335px; 
+    height: 175px;   
+}
+
+.container-right > .country > select {
+    padding: 10px 252px 10px 10px;
+}
+
+.container-right > .country > select:after {
+    padding: 10px 252px 10px 10px;
+}
+
+.container-right > .sex > input {
+    margin: 20px auto;
+}
+
+.container-right > .sex > input#female {
+    margin-left: 20px;
+}
+
+textarea::placeholder {
+    color: #0bf;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+textarea {
+    resize: none;
+  }
+
