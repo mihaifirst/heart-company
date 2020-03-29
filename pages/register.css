@@ -6,34 +6,29 @@
     border: 1px solid var(--color-1);
     padding: 30px 20px 30px;
 }
-.some-text {
-    height: 50px;
-    width: 200px;
-    background-color: var(--color-3);
-    border: 1px solid var(--color-1);
-    padding: 30px 20px 30px;
-}
 
 .container-left,
 .container-right {
     width: 50%;
 }
+
 .container-left {
     display: inline-block;
     width:calc(50% - 35px);
     margin-left: 30px;
 }
+
 .container-right {
     float: right;
 }
+
 .container-left > .name > input,
 .container-left > .email > input,
 .container-left > .password > input {
     margin-top: 10px;
     padding: 10px 100px 10px 10px;
-   
-
 }
+
 .container-left > .name > input,
 .container-left > .email > input,
 .container-left > .password > input,
@@ -62,11 +57,11 @@
 }
 .container-right > button {
     margin-top: 10px;
+    margin-left: 238px;
     padding: 10px 20px;
     background-color: var(--color-4);
     color: #fff;
     font-family: 'Open Sans', sans-serif;
-    margin-left: 238px;
     font-weight: 700;
 }
 
