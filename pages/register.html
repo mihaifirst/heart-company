@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="/styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="/pages/register.css" />
+    <title>Heart</title>
+  </head>
+  <body>
+    <!-- NAVAR -->
+    <div class="navbar">
+      <div class="navbar_container">
+        <div class="logo_area">
+          <img src="../assets/images/teemo.jpg" alt="teemo" />
+          <span>Company</span>
+        </div>
+
+        <div class="menu_navbar">
+          <a href="/index.html"><span>Home</span></a>
+          <a href="#"><span class="active">Register</span></a>
+          <a href="/pages/users.html"><span>Users</span></a>
+          <a href="/pages/profile.html"><span>Profile</span></a>
+        </div>
+      </div>
+
+      <div class="navbar-center-image">
+        <img src="../assets/images/teemo.jpg" alt="teemo" />
+      </div>
+    </div>
+    <!-- Container -->
+    <form class="container">
+        <div class="container-left">
+                <div class="text">
+                    Register
+                </div>
+                <div class="name">
+                    <label for="name">Name:</label>
+                    <input id="name" type="name" name="name" placeholder="John Doe" />
+                </div>
+                <div class="email">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" placeholder="error@mail.com" />
+                </div>
+                
+                <div class="password">
+                    <label for="lname">Password:</label>
+                    <input type="password"  name="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"/>
+                </div>
+        </div>
+
+        <div class="container-right">
+            <div class="country">
+                <select name="country">
+                  <option>Country</option> 
+                  <option>Romania</option>
+                  <option>Ungaria</option>
+                  <option>Italia</option>
+                  <option>Spania</option>
+                </select> 
+            </div>
+            <div class="sex">
+                <input type="radio" id="male" name="sex" value="male" />
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="sex" value="female" />
+                <label for="female">Female</label>
+            </div>
+    
+            <textarea rows="4" cols="50" name="message" placeholder="Type something"></textarea>
+            
+            <button type="submit">REGISTER</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
