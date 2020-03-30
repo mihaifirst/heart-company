@@ -18,7 +18,7 @@ body {
 
 .container {
   display: block;
-  width: 900px;
+  max-width: 900px;
   margin: 60px auto 0;
   box-sizing: border-box;
 }
@@ -96,5 +96,35 @@ body {
   overflow-y: scroll;
   border-radius: 0 0 10px 10px;
   background-color: var(--color-3);
+}
 
+
+/* TABLET CSS */
+@media screen and (max-width: 768px)  {
+  .container {
+  
+    width:100%
+  }
+
+  .row.row-4 {
+  
+    width:100%;
+  }
+  .row.row-2 > .column:nth-child(1) {
+    width: 99%;
+ 
+    
+  
+  }
+  .row.row-2 > .column:nth-child(2) {
+    display: inline-block;
+    width: 100%;
+  }
+  
+}
+
+/* PHONE CSS */
+@media screen and (max-width: 457px)  {
+  .container {
+  }
 }
