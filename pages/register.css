@@ -96,3 +96,18 @@ textarea {
     resize: none;
   }
 
+  @media screen and (max-width: 768px)  {
+    .container {
+      padding: 0 20px;
+      width: auto;
+      margin: 60px 20px;
+    }
+
+    .container-left > .register  {
+        padding-top: 20px;
+    }
+
+    .container-right > .country {
+        padding-top: 124px;
+    }
+}

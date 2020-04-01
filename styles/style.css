@@ -18,9 +18,8 @@ body {
 
 .container {
   display: block;
-  width: 900px;
+  max-width: 900px;
   margin: 60px auto 0;
-  box-sizing: border-box;
 }
 
 .row {
@@ -36,7 +35,6 @@ body {
 }
 
 .row.row-1 {
-    margin-top: 40px;
     text-align: center;
     border: 1px solid var(--color-1);
     border-radius: 10px 10px 0 0;
@@ -96,5 +94,48 @@ body {
   overflow-y: scroll;
   border-radius: 0 0 10px 10px;
   background-color: var(--color-3);
+}
 
+
+/* TABLET CSS */
+@media screen and (max-width: 768px)  {
+  .container {
+    padding: 0 20px;
+  }
+
+  .row.row-2 > .column:nth-child(1),
+  .row.row-2 > .column:nth-child(2) {
+    width: auto;
+    float: none;   
+  }
+
+  .row.row-3 {
+    padding-top: 50px;
+  }
+
+  .row.row-3 > .column:nth-child(1),
+  .row.row-3 > .column:nth-child(2),
+  .row.row-3 > .column:nth-child(3) {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .row.row-3 > .column:nth-child(2) {
+    margin-left: 0 ;
+  }
+
+  .row.row-3 > .column:nth-child(3){
+    display: inline-block;
+    float: none;
+  }
+
+  .row.row-4 {
+    width: 100%;
+    display: inline-block;
+    margin-top: 80px;
+  }
+}
+
+@media print {
+  /*.container { display: none !important;}*/
 }
