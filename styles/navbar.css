@@ -68,11 +68,10 @@
     color: white;
     font-weight: 600;
   }
-  
+
   .navbar > .navbar_container > .logo_area > span {
     display: inline-block;
     margin-top: 11px;
-    margin-left: 10px;
   }
 
   .navbar > .navbar_container > .hamburger-icon {
@@ -90,6 +89,12 @@
     border-radius:4px;
     font-family: 'Open Sans', sans-serif;
     margin-right: 10px;
+  }
+
+  @media screen  and (max-width: 928px) {
+    .navbar > .navbar_container > .logo_area {
+      margin-left: 10px;
+    }
   }
 
   @media screen and (max-width: 768px)  {
